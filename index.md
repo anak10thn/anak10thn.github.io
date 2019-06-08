@@ -12,6 +12,7 @@
 * 2016 - present, **Founder** - Rust Language Community Indonesia
 * 2017 - Present, **Principle Engineer & Head Of Engineer** - PT Biznet GIO Nusantara
 * 2007 - Present, **Maintainer** - Baik Programming Language (Indonesia Lexical Programming Language)
+
 ## Opensource Project
 * 2003 - TorooOS (HPC Linux Distribution)
 * 2006 - IGOS Nusantara ([Indonesia Linux Distribution](https://fedoraproject.org/wiki/List_of_Fedora_remixes#IGOS_Nusantara_.28IGN.29))
@@ -20,6 +21,7 @@
 * 2016 - Odorous (Docker Volume Plugin for GlusterFS)
 * 2017 - NEO CLI (Open Stack Orchestration Tools)
 * 2018 - BQL (Query Language for Infratructure As Code)
+
 ## Publications
 * 2009 - Exposing  C++  Native  API  to  Javascript  Object  Using  Webchannel 
 * 2010 - PHP  GTK+  &  TorooOS  (Indonesia  Linux  Conference)
