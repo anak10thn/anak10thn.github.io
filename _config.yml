@@ -2,7 +2,7 @@ title: Anak10thn.github.io
 description: Github Blog
 google_analytics: UA-42582717-1
 show_downloads: true
-theme: jekyll-theme-hacker
+theme: jekyll-theme-midnight
 
 gems:
   - jekyll-mentions
