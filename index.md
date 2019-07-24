@@ -3,7 +3,6 @@
 
 ## Contact Info
 * Email : anak10thn@gmail.com
-* Phone : +62 8211 2443939
 
 ## Experience
 * 2005 - 2007, **Junior Researcher** - Matsushita Electric Corp
