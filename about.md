@@ -1,3 +1,8 @@
+---
+layout: page
+title: About Me
+---
+
 # About Me
 
 ## Eka Tresna Irawan a.k.a Ibnu Yahya a.k.a anak10thn
