@@ -1,4 +1,4 @@
-$cos(\theta)~=~\frac{{\bf A\cdot B}}{||{\bf A}|||{\bf B}||}=\frac{{\sum}_{i=1}^{n}A_{i}\cdot B_{i}}{\sqrt{{\sum}_{i=1}^{n}A_{i}^{2}}\cdot\sqrt{{\sum}_{i=1}^{n}B_{i}^{2}}}$
+$$cos(\theta) = \frac{\mathbf{A}\cdot\mathbf{B}}{||\mathbf{A}||\cdot||\mathbf{B}||}=\frac{\sum_{i=1}^n A_{i} \cdot B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2}}\cdot\sqrt{\sum_{i=1}^{n}B_{i}^{2}}}$$
 
 To determine if two vectors are similar using the formula you provided, we need to calculate the cosine of the angle between them. The formula for the cosine of the angle $\theta$ between two vectors $\mathbf{A}$ and $\mathbf{B}$ is given by:
 
