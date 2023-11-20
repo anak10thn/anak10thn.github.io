@@ -4,7 +4,7 @@ To determine if two vectors are similar using the formula you provided, we need 
 
 $$cos(\theta) = \frac{\mathbf{A}\cdot\mathbf{B}}{||\mathbf{A}||\cdot||\mathbf{B}||}$$
 
-where $\mathbf{A}\cdot\mathbf{B}$ represents the dot product of the two vectors and $||\mathbf{A}||$ and $||\mathbf{B}||$ represent the magnitudes (or norms) of the two vectors.
+where $\mathbf{A}\cdot\mathbf{B}$ represents the dot product of the two vectors and $`||\mathbf{A}||`$ and $`||\mathbf{B}||`$ represent the magnitudes (or norms) of the two vectors.
 
 In this case, we are given the vectors $\mathbf{A}=[50,10]$ and $\mathbf{B}=[14,12]$. To calculate their similarity, we first need to find their dot product:
 
