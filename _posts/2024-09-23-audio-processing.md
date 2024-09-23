@@ -40,7 +40,7 @@ Now, let's see how we can implement this process using Node.js and the wav and s
 Make sure you have Node.js installed on your machine. Then, install the necessary packages:
 
 ```bash
-npm install fs wav sox-audio
+npm install wav sox-audio
 ```
 
 ### Code Implementation
