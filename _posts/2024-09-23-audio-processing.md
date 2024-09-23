@@ -1,6 +1,6 @@
 # Audio Processing: Converting Stereo to Mono, PCM 16-bit, and Resampling to 16kHz
 
-In the world of audio processing, converting audio files to a specific format is a common task. Whether you're preparing audio for machine learning models, optimizing for streaming, or ensuring compatibility with various devices, understanding how to manipulate audio files is crucial. In this blog post, we'll walk through the steps to convert stereo audio to mono, convert it to PCM 16-bit little-endian format, and resample it to 16kHz. We'll also provide a practical implementation using Node.js and the `ffmpeg` library.
+In the world of audio processing, converting audio files to a specific format is a common task. Whether you're preparing audio for machine learning models, optimizing for streaming, or ensuring compatibility with various devices, understanding how to manipulate audio files is crucial. In this blog post, we'll walk through the steps to convert stereo audio to mono, convert it to PCM 16-bit little-endian format, and resample it to 16kHz. We'll also provide a practical implementation using Node.js and the wav and sox-audio libraries.
 
 ## Step-by-Step Guide
 
@@ -41,7 +41,7 @@ Now, let's see how we can implement this process using Node.js and the `ffmpeg` 
 Make sure you have Node.js installed on your machine. Then, install the necessary packages:
 
 ```bash
-npm install fluent-ffmpeg @ffmpeg-installer/ffmpeg
+npm install fs wav sox-audio
 ```
 
 ### Code Implementation
@@ -49,26 +49,51 @@ npm install fluent-ffmpeg @ffmpeg-installer/ffmpeg
 Here's a function to process the audio file:
 
 ```javascript
-const ffmpeg = require('fluent-ffmpeg');
-const ffmpegInstaller = require('@ffmpeg-installer/ffmpeg');
+const fs = require('fs');
+const wav = require('wav');
+const SoxCommand = require('sox-audio');
 
-ffmpeg.setFfmpegPath(ffmpegInstaller.path);
-
-// Function to process audio
 function processAudio(inputPath, outputPath, callback) {
-  ffmpeg(inputPath)
-    .audioCodec('pcm_s16le') // Convert to PCM 16-bit little-endian
-    .audioChannels(1) // Convert to mono channel
-    .audioFrequency(16000) // Resample to 16kHz
-    .on('end', () => {
-      console.log('Audio processing finished.');
-      callback(null, outputPath);
-    })
-    .on('error', (err) => {
-      console.error('Error processing audio:', err);
-      callback(err);
-    })
-    .save(outputPath);
+  // Read the input WAV file
+  const reader = new wav.Reader();
+
+  reader.on('format', (format) => {
+    // Check if the audio is stereo
+    if (format.channels === 2) {
+      // Convert stereo to mono
+      reader.on('data', (data) => {
+        const monoData = Buffer.alloc(data.length / 2);
+        for (let i = 0; i < data.length; i += 4) {
+          const left = data.readInt16LE(i);
+          const right = data.readInt16LE(i + 2);
+          const mono = Math.round((left + right) / 2);
+          monoData.writeInt16LE(mono, i / 2);
+        }
+        fs.writeFileSync('temp_mono.wav', monoData);
+      });
+    } else {
+      fs.writeFileSync('temp_mono.wav', fs.readFileSync(inputPath));
+    }
+
+    // Resample to 16kHz using Sox
+    const command = SoxCommand()
+      .input('temp_mono.wav')
+      .output(outputPath)
+      .outputSampleRate(16000)
+      .outputEncoding('signed-integer', 16)
+      .on('end', () => {
+        console.log('Audio processing finished.');
+        callback(null, outputPath);
+      })
+      .on('error', (err) => {
+        console.error('Error processing audio:', err);
+        callback(err);
+      });
+
+    command.run();
+  });
+
+  fs.createReadStream(inputPath).pipe(reader);
 }
 ```
 
@@ -88,4 +113,4 @@ processAudio('input.mp3', 'output.wav', (err, outputPath) => {
 
 ## Conclusion
 
-In this blog post, we've covered the steps to convert stereo audio to mono, convert it to PCM 16-bit little-endian format, and resample it to 16kHz. We've also provided a practical implementation using Node.js and the `ffmpeg` library. This process is essential for various applications, including audio preprocessing for machine learning, optimizing audio for streaming, and ensuring compatibility with different devices. Happy coding!
+In this blog post, we've covered the steps to convert stereo audio to mono, convert it to PCM 16-bit little-endian format, and resample it to 16kHz. We've also provided a practical implementation using Node.js and the wav and sox-audio libraries. This process is essential for various applications, including audio preprocessing for machine learning, optimizing audio for streaming, and ensuring compatibility with different devices. Happy coding!
