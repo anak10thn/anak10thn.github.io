@@ -53,13 +53,38 @@ const wav = require('wav');
 const SoxCommand = require('sox-audio');
 
 function processAudio(inputPath, outputPath, callback) {
+  const tempWavPath = 'temp_input.wav';
+  const tempMonoPath = 'temp_mono.wav';
+
+  // Convert input audio to WAV format using Sox
+  const convertToWav = SoxCommand()
+    .input(inputPath)
+    .output(tempWavPath)
+    .outputFileType('wav')
+    .on('end', () => {
+      console.log('Conversion to WAV finished.');
+      processWav(tempWavPath, tempMonoPath, outputPath, callback);
+    })
+    .on('error', (err) => {
+      console.error('Error converting to WAV:', err);
+      callback(err);
+    });
+
+  convertToWav.run();
+}
+
+function processWav(inputPath, tempMonoPath, outputPath, callback) {
   // Read the input WAV file
   const reader = new wav.Reader();
+  const writer = new wav.FileWriter(tempMonoPath, {
+    channels: 1,
+    sampleRate: 44100,
+    bitDepth: 16
+  });
 
   reader.on('format', (format) => {
     // Check if the audio is stereo
     if (format.channels === 2) {
-      // Convert stereo to mono
       reader.on('data', (data) => {
         const monoData = Buffer.alloc(data.length / 2);
         for (let i = 0; i < data.length; i += 4) {
@@ -68,28 +93,32 @@ function processAudio(inputPath, outputPath, callback) {
           const mono = Math.round((left + right) / 2);
           monoData.writeInt16LE(mono, i / 2);
         }
-        fs.writeFileSync('temp_mono.wav', monoData);
+        writer.write(monoData);
       });
     } else {
-      fs.writeFileSync('temp_mono.wav', fs.readFileSync(inputPath));
+      reader.pipe(writer);
     }
 
-    // Resample to 16kHz using Sox
-    const command = SoxCommand()
-      .input('temp_mono.wav')
-      .output(outputPath)
-      .outputSampleRate(16000)
-      .outputEncoding('signed-integer', 16)
-      .on('end', () => {
-        console.log('Audio processing finished.');
-        callback(null, outputPath);
-      })
-      .on('error', (err) => {
-        console.error('Error processing audio:', err);
-        callback(err);
-      });
+    reader.on('end', () => {
+      writer.end();
 
-    command.run();
+      // Resample to 16kHz using Sox
+      const command = SoxCommand()
+        .input(tempMonoPath)
+        .output(outputPath)
+        .outputSampleRate(16000)
+        .outputEncoding('signed-integer', 16)
+        .on('end', () => {
+          console.log('Audio processing finished.');
+          callback(null, outputPath);
+        })
+        .on('error', (err) => {
+          console.error('Error processing audio:', err);
+          callback(err);
+        });
+
+      command.run();
+    });
   });
 
   fs.createReadStream(inputPath).pipe(reader);
