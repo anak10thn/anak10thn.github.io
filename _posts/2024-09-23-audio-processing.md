@@ -32,9 +32,8 @@ $$ y[n] = \text{round}\left(\left(\frac{\text{Left}\left(\frac{n \cdot F_s}{F_d}
 - **Resampling**: $x\left(\frac{n \cdot F_s}{F_d}\right)$
 - **PCM Conversion**: $\text{round}(x(t) \times 32767)$
 
-## Implementation with Node.js and FFmpeg
-
-Now, let's see how we can implement this process using Node.js and the `ffmpeg` library. We'll use the `fluent-ffmpeg` package to handle the audio processing.
+## Implementation with Node.js, wav, and sox-audio
+Now, let's see how we can implement this process using Node.js and the wav and sox-audio libraries.
 
 ### Prerequisites
 
