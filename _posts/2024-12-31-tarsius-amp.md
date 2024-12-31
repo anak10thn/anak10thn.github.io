@@ -6,15 +6,15 @@ Di penghujung tahun ini gue mutusin untuk mengerjakan project yang tidak ada hub
 
 Jadi ceritanya, gue diskusi dulu saya orang yang paham dan udah lama gw percaya buat ngusurin beberapa tube amp gue. Buat preamp, akhirnya gue pilih tabung JJ yang katanya sih suaranya yahud banget. Sebenernya pas liat harganya sempet mikir "Ini tabung apa emas?" 😂 Tapi yaudahlah ya, namanya juga hobi!
 
-![](../assets/amp/1.2.jpeg)
+![](https://raw.githubusercontent.com/anak10thn/anak10thn.github.io/refs/heads/master/assets/amp/1.2.jpeg)
 
-![](../assets/amp/1.jpg)
+![](https://raw.githubusercontent.com/anak10thn/anak10thn.github.io/refs/heads/master/assets/amp/1.jpg)
 
 Speaker-nya pake Jensen P12R, yang waktu nyoba pertama kali rasanya pengen peluk speaker saking bagusnya suaranya. Power section-nya juga gue pilih yang jos, meskipun dompet sempet protes keras hahaha!
 
-![](../assets/amp/2.jpg)
+![](https://raw.githubusercontent.com/anak10thn/anak10thn.github.io/refs/heads/master/assets/amp/2.jpg)
 
-![](../assets/amp/3.jpg)
+![](https://raw.githubusercontent.com/anak10thn/anak10thn.github.io/refs/heads/master/assets/amp/3.jpg)
 
 ## Order Parts: Petualangan Online Shopping
 
@@ -24,24 +24,24 @@ Nah, ini nih yang bikin deg-degan. Bayangin aja guys, order parts langsung dari 
 
 Seriusan deh, proses perakitan ini bikin gue belajar sabar. Kadang rasanya pengen teriak "KENAPA HARUS SERUMIT INI?!" tapi gak jadi karena takut tetangga kira ada apa-apa 😅
 
-![](../assets/amp/8.jpeg)
+![](https://raw.githubusercontent.com/anak10thn/anak10thn.github.io/refs/heads/master/assets/amp/8.jpeg)
 
 Tips dari gue: pastiin layout-nya bener sebelum mulai soldering. Soalnya, pengalaman salah layout itu rasanya pengen guling-guling di lantai sambil nangis! Dan please, jangan sampling gorengan pas lagi soldering. Percaya deh, minyak dan solder itu bukan kombinasi yang baik! 🍟❌
 
-![](../assets/amp/7.jpeg)
-![](../assets/amp/6.jpeg)
+![](https://raw.githubusercontent.com/anak10thn/anak10thn.github.io/refs/heads/master/assets/amp/7.jpeg)
+![](https://raw.githubusercontent.com/anak10thn/anak10thn.github.io/refs/heads/master/assets/amp/6.jpeg)
 
 ## The Moment of Truth!
 
 Setelah berminggu-minggu bergulat dengan kabel dan solder (dan beberapa kali nyaris nyerah), akhirnya... JADI JUGAAA! 🎉 Pas pertama kali nyalain, gue deg-degan kayak nunggu pengumuman hasil ujian. Dan bro... suaranya... ANJAY MANTAP POLL! 
 
-![](../assets/amp/9.jpeg)
-![](../assets/amp/10.jpeg)
+![](https://raw.githubusercontent.com/anak10thn/anak10thn.github.io/refs/heads/master/assets/amp/9.jpeg)
+![](https://raw.githubusercontent.com/anak10thn/anak10thn.github.io/refs/heads/master/assets/amp/10.jpeg)
 
 Clean tone-nya crispy banget kayak ayam goreng fresh from the kitchen, crunch-nya bikin merinding, dan sustain-nya... Ya Tuhan, bisa bikin terharu! 😭👌
 
-![](../assets/amp/11.jpeg)
-![](../assets/amp/13.jpeg)
+![](https://raw.githubusercontent.com/anak10thn/anak10thn.github.io/refs/heads/master/assets/amp/11.jpeg)
+![](https://raw.githubusercontent.com/anak10thn/anak10thn.github.io/refs/heads/master/assets/amp/13.jpeg)
 
 ## Pelajaran Berharga
 
