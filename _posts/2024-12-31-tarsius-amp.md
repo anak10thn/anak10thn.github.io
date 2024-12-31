@@ -1,27 +1,59 @@
-# Tarsius Amp Story
+# Tarsius Amp Story : Under 5 million rupiah tube amp
 
-Sejak lama saya memimpikan untuk memiliki amplifier tabung dengan karakter suara klasik yang hangat. Terinspirasi dari legenda Fender Deluxe 5E3, saya memutuskan untuk membangun amplifier custom saya sendiri dengan budget yang terjangkau - di bawah 5 juta rupiah.
+Di penghujung tahun ini gue mutusin untuk mengerjakan project yang tidak ada hubungannya sama sekali dengan tech! yaitu membuat tube amp, dan yang bikin makin seru, budget gw cuma 5 juta! Challenge accepted! 💪
 
-## Pemilihan Komponen
+## Berburu Komponen: Misi Impossible?
 
-Jantung dari ampli ini adalah kombinasi tabung yang telah dipilih dengan cermat. Untuk bagian preamp, saya memilih tabung JJ yang terkenal dengan karakter suara yang jernih namun tetap memiliki kehangatan khas tabung. Power section diperkuat dengan tabung power pilihan yang memberikan headroom yang cukup untuk clean tone yang crisp maupun overdrive yang manis.
+Jadi ceritanya, gue diskusi dulu saya orang yang paham dan udah lama gw percaya buat ngusurin beberapa tube amp gue. Buat preamp, akhirnya gue pilih tabung JJ yang katanya sih suaranya yahud banget. Sebenernya pas liat harganya sempet mikir "Ini tabung apa emas?" 😂 Tapi yaudahlah ya, namanya juga hobi!
 
-Speaker Jensen yang saya pilih memberikan reproduksi suara yang seimbang - dengan low end yang solid dan high end yang detailed. Kombinasi ini menciptakan tone yang mirip dengan amplifier klasik 5E3, namun dengan sentuhan modern yang segar.
+![](../assets/amp/1.2.jpeg)
 
-## Proses Perakitan
+![](../assets/amp/1.jpg)
 
-Perakitan dimulai dengan membuat layout yang tepat pada chassis. Penempatan komponen harus diperhatikan dengan seksama untuk menghindari noise dan interferensi. Tabung-tabung ditempatkan dengan jarak yang cukup untuk ventilasi yang baik.
+Speaker-nya pake Jensen P12R, yang waktu nyoba pertama kali rasanya pengen peluk speaker saking bagusnya suaranya. Power section-nya juga gue pilih yang jos, meskipun dompet sempet protes keras hahaha!
 
-Proses soldering membutuhkan kesabaran dan ketelitian tinggi. Setiap joint harus sempurna untuk menghindari masalah di kemudian hari. Grounding point dibuat dengan sangat hati-hati untuk meminimalisir hum dan noise yang tidak diinginkan.
+![](../assets/amp/2.jpg)
 
-## Hasil Akhir
+![](../assets/amp/3.jpg)
 
-Setelah berminggu-minggu pengerjaan, amplifier ini akhirnya selesai dengan total biaya di bawah 5 juta rupiah. Suara yang dihasilkan melampaui ekspektasi saya - clean tone yang crystalline, crunch yang responsif, dan sustain yang musikal. Karakteristik 5E3 yang legendaris tetap terasa, namun dengan nuansa modern yang fresh.
+## Order Parts: Petualangan Online Shopping
+
+Nah, ini nih yang bikin deg-degan. Bayangin aja guys, order parts langsung dari US! Rasanya kayak nunggu pacar pulang dari luar negeri. Tiap hari ngecek tracking, berharap gak nyasar ke negara tetangga. Untungnya semua komponen sampe dengan selamat, meskipun pas dibea cukai rada bingung liat paket berisi tabung2 aneh. Satu kuncinya agar lolos dari bea cukai ya invoice. Asal ada invoice semua aman.
+
+## Proses Rakit: Antara Soldering dan Doa
+
+Seriusan deh, proses perakitan ini bikin gue belajar sabar. Kadang rasanya pengen teriak "KENAPA HARUS SERUMIT INI?!" tapi gak jadi karena takut tetangga kira ada apa-apa 😅
+
+![](../assets/amp/8.jpeg)
+
+Tips dari gue: pastiin layout-nya bener sebelum mulai soldering. Soalnya, pengalaman salah layout itu rasanya pengen guling-guling di lantai sambil nangis! Dan please, jangan sampling gorengan pas lagi soldering. Percaya deh, minyak dan solder itu bukan kombinasi yang baik! 🍟❌
+
+![](../assets/amp/7.jpeg)
+![](../assets/amp/6.jpeg)
+
+## The Moment of Truth!
+
+Setelah berminggu-minggu bergulat dengan kabel dan solder (dan beberapa kali nyaris nyerah), akhirnya... JADI JUGAAA! 🎉 Pas pertama kali nyalain, gue deg-degan kayak nunggu pengumuman hasil ujian. Dan bro... suaranya... ANJAY MANTAP POLL! 
+
+![](../assets/amp/9.jpeg)
+![](../assets/amp/10.jpeg)
+
+Clean tone-nya crispy banget kayak ayam goreng fresh from the kitchen, crunch-nya bikin merinding, dan sustain-nya... Ya Tuhan, bisa bikin terharu! 😭👌
+
+![](../assets/amp/11.jpeg)
+![](../assets/amp/13.jpeg)
 
 ## Pelajaran Berharga
 
-Proyek ini mengajarkan banyak hal tentang elektronika tabung dan craft pembuatan amplifier. Meskipun membutuhkan kesabaran dan ketelitian tinggi, hasil akhirnya sangat memuaskan. Yang lebih penting lagi, proses ini memberikan pemahaman mendalam tentang cara kerja amplifier tabung dan bagaimana setiap komponen berkontribusi pada tone akhir.
+Yang gue pelajari dari project gila ini:
+1. Ternyata bikin amp tabung tuh gak seseram yang dikira (tapi tetep aja serem sih kalau kesetrum 😅)
+2. Kesabaran itu kunci (dan kopi, banyak kopi ☕)
+3. Budget 5 juta ternyata bisa menghasilkan sesuatu yang keren!
 
-## Penutup
+## Kesimpulan
 
-Membangun amplifier custom ini bukan hanya tentang menghemat budget, tapi juga tentang menciptakan alat musik yang benar-benar personal dan unik. Dengan total biaya di bawah 5 juta rupiah, proyek ini membuktikan bahwa membangun amplifier tabung berkualitas tinggi tidak harus mahal. Yang dibutuhkan adalah riset yang baik, kesabaran, dan dedikasi untuk menghasilkan tone terbaik.
+Guys, kalo ada yang bilang bikin amp tabung itu mustahil dengan budget terbatas, jangan percaya! Buktinya gue berhasil bikin dengan budget di bawah 5 juta dan hasilnya gak kalah sama yang harganya belasan juta! 
+
+Dan yang paling penting... rasanya PUAS BANGET pas tau ini hasil kerja sendiri. Meskipun kadang pengen banting project-nya ke lantai, tapi pas denger suaranya yang yahud, semua penderitaan langsung terbayar lunas! 😎🎸
+
+NB: No capacitors were harmed in the making of this amplifier... well, maybe just a few. 😅
