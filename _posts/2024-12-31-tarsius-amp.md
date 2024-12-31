@@ -20,7 +20,7 @@ Speaker-nya pake Jensen P12R, yang waktu nyoba pertama kali rasanya pengen peluk
 
 Nah, ini nih yang bikin deg-degan. Bayangin aja guys, order parts langsung dari US! Rasanya kayak nunggu pacar pulang dari luar negeri. Tiap hari ngecek tracking, berharap gak nyasar ke negara tetangga. Untungnya semua komponen sampe dengan selamat, meskipun pas dibea cukai rada bingung liat paket berisi tabung2 aneh. Satu kuncinya agar lolos dari bea cukai ya invoice. Asal ada invoice semua aman.
 
-![](https://raw.githubusercontent.com/anak10thn/anak10thn.github.io/refs/heads/master/assets/amp/4.jpeg)
+![](https://raw.githubusercontent.com/anak10thn/anak10thn.github.io/refs/heads/master/assets/amp/5.jpeg)
 
 ## Proses Rakit: Antara Soldering dan Doa
 
