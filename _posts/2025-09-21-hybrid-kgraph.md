@@ -69,13 +69,13 @@ Let:
 * Define a decay function over graph distance, e.g.:
 
 $$
-g(i; t) = \exp( - \lambda \cdot d(i, t) ), \quad \lambda > 0
+g(i; t)=\exp(-\lambda \cdot d(i,t)) \quad (\lambda>0)
 $$
 
 If you have multiple anchor nodes $t \in A$ (from vector similarity or external seed), then you might take:
 
 $$
-g(i) = \max_{t \in A} \; \exp( - \lambda \cdot d(i, t) )
+g(i)=\max_{t \in \mathcal{N}_K} \exp(-\lambda \cdot d(i,t))
 $$
 
 or some other aggregate (average, sum, etc.). This gives a graph-based score that decreases as node is “farther” in the graph from the anchor(s).
@@ -87,7 +87,7 @@ or some other aggregate (average, sum, etc.). This gives a graph-based score tha
 To combine vector similarity and graph structure, use a weighted combination (linear blend) or another combining function. A simple linear hybrid score is:
 
 $$
-S(i) = \alpha \cdot \mathrm{cosine}(\mathbf{q}, \mathbf{x}_i) \;+\; (1 - \alpha) \cdot g(i)
+S(i)=\alpha \cdot \text{cos}(\mathbf{q},\mathbf{x}_i) + (1-\alpha)\cdot g(i), \quad \alpha\in[0,1].
 $$
 
 * $\alpha \in [0,1]$ controls the trade-off between semantic similarity vs graph proximity.
