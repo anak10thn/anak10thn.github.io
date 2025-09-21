@@ -198,15 +198,16 @@ Procedure:
 Putting all together, the core formulas are:
 
 $$
-\mathrm{cosine}(\mathbf{q}, \mathbf{x}_i) = \frac{ \mathbf{q} \cdot \mathbf{x}_i }{ \|\mathbf{q}\| \; \|\mathbf{x}_i\| }
+\mathrm{cosine}(\mathbf{q}, \mathbf{x}_i) = \frac{ \mathbf{q} \cdot \mathbf{x}_i }{ \| \mathbf{q} \| \cdot \| \mathbf{x}_i \| }
+= \frac{ \sum_{j=1}^d q_j \cdot (x_i)_j }{ \sqrt{\sum_{j=1}^d q_j^2} \cdot \sqrt{\sum_{j=1}^d (x_i)_j^2} }
 $$
 
 $$
-g(i) = \max_{t \in A} \; \exp( - \lambda \cdot d(i, t) )
+g(i)=\max_{t \in \mathcal{N}_K} \exp(-\lambda \cdot d(i,t))
 $$
 
 $$
-S(i) = \alpha \cdot \mathrm{cosine}(\mathbf{q}, \mathbf{x}_i) \;+\; (1 - \alpha) \cdot g(i)
+S(i)=\alpha \cdot \text{cos}(\mathbf{q},\mathbf{x}_i) + (1-\alpha)\cdot g(i), \quad \alpha\in[0,1].
 $$
 
 ---
