@@ -236,7 +236,6 @@ const nodes = [
   { id: "n5", type: "org", text: "Royal Society: scientific academy supporting research and publications." },
 ];
 
-// Edge tak berarah sederhana (undirected)
 const edges = [
   ["n1", "n2"], // Ada -> Analytical Engine
   ["n1", "n3"], // Ada -> paper
@@ -314,7 +313,7 @@ async function main() {
   // 3) Skor cosine awal
   const cosScores = nodeEmbeddings.map(e => cosine(qEmb, e));
 
-  // 4) Ambil anchor topK (berdasar cosine) untuk sinyal graf
+  // 4) Ambil anchor topK (berdasar cosine) untuk graph signal
   const K = 2;
   const topKIdx = cosScores
     .map((s, i) => [s, i])
@@ -325,14 +324,14 @@ async function main() {
 
   // 5) Hitung skor hybrid
   const alpha = 0.7;       // lebih berat ke semantic
-  const lambda = 0.7;      // laju peluruhan graf
+  const lambda = 0.7;
   const results = nodes.map((n, i) => {
     const g = graphDecayForNode(n.id, anchorIds, lambda);
     const score = hybridScore(cosScores[i], g, alpha);
     return { node: n, cos: cosScores[i], g, score };
   }).sort((a, b) => b.score - a.score);
 
-  // 6) Cetak hasil
+  // 6) result
   console.table(results.map(r => ({
     id: r.node.id,
     type: r.node.type,
