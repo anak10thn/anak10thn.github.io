@@ -47,11 +47,11 @@ Here are the core formulas used in a hybrid retrieval / vectorized KG setup.
 Given a query embedding vector $\mathbf{q} \in \mathbb{R}^d$ and a node embedding $\mathbf{x}_i \in \mathbb{R}^d$:
 
 $$
-\mathrm{cosine}(\mathbf{q}, \mathbf{x}_i) = \frac{ \mathbf{q} \cdot \mathbf{x}_i }{ \| \mathbf{q} \| \; \| \mathbf{x}_i \| }
-= \frac{ \sum_{j=1}^d q_j \; (x_i)_j }{ \sqrt{\sum_{j=1}^d q_j^2} \; \sqrt{\sum_{j=1}^d (x_i)_j^2} }
+\mathrm{cosine}(\mathbf{q}, \mathbf{x}_i) = \frac{ \mathbf{q} \cdot \mathbf{x}_i }{ \| \mathbf{q} \| \cdot \| \mathbf{x}_i \| }
+= \frac{ \sum_{j=1}^d q_j \cdot (x_i)_j }{ \sqrt{\sum_{j=1}^d q_j^2} \cdot \sqrt{\sum_{j=1}^d (x_i)_j^2} }
 $$
 
-* $\mathbf{q} \cdot \mathbf{x}_i = \sum_{j=1}^d q_j (x_i)_j$ is the dot product.
+* $\mathbf{q} \cdot \mathbf{x}_i = \sum_{j=1}^d q_j \cdot (x_i)_j$ is the dot product.
 * $\| \mathbf{q} \|$ is the Euclidean norm (length) of $\mathbf{q}$, and similarly $\| \mathbf{x}_i \|$.
 * The result is in the interval $[-1, 1]$, though in many embedding systems for text it is non-negative (if negative values in embeddings are uncommon or if vectors are non-negative).
 
