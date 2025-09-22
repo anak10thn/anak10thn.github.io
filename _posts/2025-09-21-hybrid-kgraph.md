@@ -349,6 +349,15 @@ main().catch(err => {
 });
 ```
 
+output :
+| index | id  | type     | text                                                              | cos     | g       | hybrid  |
+|-------|-----|----------|--------------------------------------------------------------------|---------|---------|---------|
+| 0     | n1  | person   | Ada Lovelace, pioneer of computing and algorithms.                 | 0.563   | 1       | 0.6941  |
+| 1     | n2  | concept  | Analytical Engine: early mechanical general-purpose computer...    | 0.5575  | 1       | 0.6902  |
+| 2     | n3  | paper    | A note on Bernoulli numbers and algorithmic computation.           | 0.4247  | 0.4966  | 0.4463  |
+| 3     | n4  | concept  | Knowledge Graph: entities and relations capturing real-world...    | 0.0777  | 0.4966  | 0.2034  |
+| 4     | n5  | org      | Royal Society: scientific academy supporting research and pu...     | 0.1111  | 0.2466  | 0.1518  |
+
 ---
 
 ## Conclusion
