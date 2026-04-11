@@ -30,3 +30,6 @@ I am a Cloud Computing & IoT Researcher, part time as a musician with my Gibson 
 * 2010 - PHP  GTK+  &  TorooOS  (Indonesia  Linux  Conference)
 * 2014 - Purwarupa  Forensik  BBM  di  Telepon  Seluler  Android  Menggunakan  IGN-SDK  (Indonesia  Security  Conference)
 * 2017 - Biznet Query Language pada Infrastructure As Code
+* 2025 - IEEE : Technology-Enhanced Learning for User Security Awareness Using AI-based Naive RAG: A Design and Prototype
+* 2025 - IEEE : A Proof of Concept for Fixed Chunking in an Aidriven Cybersecurity Awareness Prototype
+* 2025 - IEEE : Cross-Platform Speaker Diarization: Evaluating the Scalability and Flexibility of Maleo
