@@ -3,7 +3,7 @@ layout: page
 title: About Me
 ---
 ## Eka Tresna Irawan a.k.a Ibnu Yahya a.k.a anak10thn
-I am a Cloud Computing & IoT Researcher, part time as a musician with my Gibson SG. Ted & Mojo Jojo lover.
+I am just a ordinary people, part time as a musician with my Gibson SG. Shinchan, Ted & Mojo Jojo lover.
 
 ## Contact Info
 * Email : anak10thn@gmail.com
