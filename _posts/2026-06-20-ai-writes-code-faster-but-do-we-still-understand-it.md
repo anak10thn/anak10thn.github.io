@@ -68,7 +68,7 @@ But what are we actually measuring?
 
 The [DORA metrics](https://dora.dev), the industry standard for measuring engineering performance, are [increasingly misleading in the AI era](https://larridin.com/developer-productivity-hub/why-dora-metrics-break-ai-era). A team can improve deployment frequency because AI generates code faster while simultaneously increasing change failure rate because that code is harder to review and maintain. The metrics capture output volume but not output comprehension.
 
-Bain's 2025 research found that AI productivity gains stall at 10-15% because traditional metrics hide AI-specific problems: rework cycles, hidden technical debt, and the compounding cost of code that nobody truly owns mentally.
+[Bain's 2025 research](https://www.bain.com/insights/from-pilots-to-payoff-generative-ai-in-software-development-technology-report-2025/) found that AI productivity gains stall at 10-15% because traditional metrics hide AI-specific problems: rework cycles, hidden technical debt, and the compounding cost of code that nobody truly owns mentally.
 
 So I'll ask the uncomfortable question: Are we actually more productive, or are we just building bigger piles of code that we don't understand? Velocity is not the same as progress. You can run very fast in the wrong direction.
 
@@ -120,9 +120,10 @@ Because Addy Osmani is right: making code generation cheap doesn't eliminate the
 
 *References:*
 
-- *Osmani, A. (2025). [Comprehension Debt](https://addyosmani.com/blog/comprehension-debt/)*
+- *Osmani, A. (2026). [Comprehension Debt](https://addyosmani.com/blog/comprehension-debt/)*
 - *Anthropic. (2026). [How AI Assistance Impacts the Formation of Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills)*
 - *METR. (2025). [Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org)*
 - *GitClear. (2025). [AI Copilot Code Quality: 2025 Data Suggests 4x Growth in Code Clones](https://www.gitclear.com/ai_assistant_code_quality_2025_research)*
 - *Larridin. (2026). [Why DORA Metrics Break in the AI Era](https://larridin.com/developer-productivity-hub/why-dora-metrics-break-ai-era)*
+- *Bain & Company. (2025). [From Pilots to Payoff: Generative AI in Software Development](https://www.bain.com/insights/from-pilots-to-payoff-generative-ai-in-software-development-technology-report-2025/)*
 - *Jonggrang. [AI Development Workflow Orchestrator](https://jonggrang.dev/deck) | [GitHub](https://github.com/porcupine-md/jonggrang)*
