@@ -50,7 +50,7 @@ When AI writes the code, you get the artifact but not the map. And the map is wh
 
 An [Anthropic study](https://www.anthropic.com/research/AI-assistance-coding-skills) tracked 52 engineers learning a new Python library and found that developers who relied on AI assistance scored 17% lower on comprehension assessments, averaging 50% compared to 67% for the hand-coding group. The steepest decline? Debugging skills. The exact skill you need most when AI-generated code breaks in production.
 
-The [METR study](https://metr.org) took it further: in a randomized controlled trial with experienced open-source developers, AI tools made them 19% *slower* at completing tasks. But here's the kicker: those same developers *believed* they were 20% faster. The perception gap is the scary part. We're not just losing understanding, we're losing awareness that we've lost it.
+The [METR study](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) took it further: in a randomized controlled trial with experienced open-source developers, AI tools made them 19% *slower* at completing tasks. But here's the kicker: those same developers *believed* they were 20% faster. The perception gap is the scary part. We're not just losing understanding, we're losing awareness that we've lost it.
 
 I see this pattern constantly. A team ships fast for three months, then hits their first real incident. The mean time to recovery (MTTR) balloons because nobody has the mental map anymore. They're not debugging their own system. They're reverse-engineering a stranger's code under pressure. And that stranger is an AI that can't explain its reasoning.
 
@@ -122,7 +122,7 @@ Because Addy Osmani is right: making code generation cheap doesn't eliminate the
 
 - *Osmani, A. (2026). [Comprehension Debt](https://addyosmani.com/blog/comprehension-debt/)*
 - *Anthropic. (2026). [How AI Assistance Impacts the Formation of Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills)*
-- *METR. (2025). [Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org)*
+- *METR. (2025). [Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)*
 - *GitClear. (2025). [AI Copilot Code Quality: 2025 Data Suggests 4x Growth in Code Clones](https://www.gitclear.com/ai_assistant_code_quality_2025_research)*
 - *Larridin. (2026). [Why DORA Metrics Break in the AI Era](https://larridin.com/developer-productivity-hub/why-dora-metrics-break-ai-era)*
 - *Bain & Company. (2025). [From Pilots to Payoff: Generative AI in Software Development](https://www.bain.com/insights/from-pilots-to-payoff-generative-ai-in-software-development-technology-report-2025/)*
